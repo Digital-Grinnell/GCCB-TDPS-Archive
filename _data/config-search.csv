@@ -1,10 +1,22 @@
 field,index,display
 title,true,true
 date,true,true
-creator,true,false
-focused_movement,true,true
+venue,true,true
+playwright/composer,true,true
+director,true,true
+scenic designer,true,true
+lighting designer,true,true
+costume designer,true,true
+technical director,true,true
+music director,true,true
+choreographer,true,true
+sound designer,true,true
+projection designer,true,true
+dramaturg,true,true
+intimacy director,true,true
+production students,true,true
+ensemble,true,true
+collaborators,true,true
 description,true,true
 subject,true,true
 location,true,false
-objectid,true,true
-people,true, true

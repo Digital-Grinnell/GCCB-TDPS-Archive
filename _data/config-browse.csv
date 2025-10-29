@@ -1,10 +1,19 @@
-field,display_name,btn,hidden,sort_name,facet_name
-date,Date,,,Date Created
-description,,,true,
-creator,Creator,,,
-collection, Collection,,,
-subject,,true,,Subjects,
-location,,true,,,Location Depicted
-identifier,,,,Identifier,
-focused_movement,Movement,true,,Movement
-people,People,true,,People
+field,display_name,btn,hidden,sort_name
+date,Date,,,Date
+playwright/composer,,,true,
+director,Director,,,Director
+scenic designer,,,true,
+costume designer,,,true,
+lighting designer,,,true,
+technical director,,,true,
+music director,,,true,
+choreographer,,,true,
+sound designer,,,true,
+projection designer,,,true,
+dramaturg,,,true,
+intimacy director,,,true,
+production students,,,true,
+ensemble,,,true,
+collaborators,,,true,
+subject,,true
+location,,true
