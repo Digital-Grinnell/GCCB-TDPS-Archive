@@ -18,6 +18,7 @@ home-banner-image-position: # Default is center
 #
 # see _data/metadata-config.csv to define the metadata fields that will display.
 browse-buttons: true # true/false, adds previous/next arrows to item pages
+default-sort-field: Date
 
 ##########
 # SUBJECTS PAGE

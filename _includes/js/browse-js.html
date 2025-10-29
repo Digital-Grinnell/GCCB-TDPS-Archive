@@ -810,7 +810,10 @@ function sorting(jsonObject, keyToSortBy) {
         let y = b[keyToSortBy];
         if (typeof x === 'string') x = x.toUpperCase();
         if (typeof y === 'string') y = y.toUpperCase();
-        return (x == null) ? 1 : (y == null) ? -1 : (x < y) ? -1 : (x > y) ? 1 : 0;
+        if (key_to_sort_by === "date") {
+            return ((x==null) ? -1 : (y==null) ? 1: (x < y) ? 1 : ((x > y) ? -1 : 0));
+        }
+        return ((x==null) ? 1: (y==null) ? -1: (x < y) ? -1 : ((x > y) ? 1 : 0));
     });
 }
 
