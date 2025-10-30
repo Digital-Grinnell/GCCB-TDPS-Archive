@@ -45,7 +45,7 @@
     </div>
 
     <div class="col-md-12 text-center pt-3 pb-1">
-        <p class="text-white">Last updated {{ site.time | date: '%Y-%b-%d' }}</p>
+        <p class="text-white">Last updated <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%B %-d, %Y at %-I:%M %p' }}</time></p>
     </div>
 
 </footer>
