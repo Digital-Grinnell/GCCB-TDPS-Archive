@@ -1,3 +1,49 @@
+# GCCB TDPS Archive
+
+This repository contains the Grinnell College Theatre, Dance, and Performance Studies (TDPS) Archive, built using CollectionBuilder-CSV with Grinnell College customizations.
+
+## Building Locally
+
+To build and test the site locally on your machine:
+
+1. **Prerequisites:** Ensure you have Ruby, Jekyll, and Bundler installed
+2. **Install dependencies:**
+   ```bash
+   bundle install
+   ```
+3. **Build and serve:**
+   ```bash
+   bundle exec jekyll serve
+   ```
+4. **View site:** Open your browser to `http://localhost:4000`
+
+## Azure Static Web App Deployment
+
+This site is automatically deployed to Azure Static Web Apps whenever changes are pushed to the `main` branch.
+
+- **Live Site:** [https://delightful-mud-01e2fb510.2.azurestaticapps.net](https://delightful-mud-01e2fb510.2.azurestaticapps.net) *(URL will be updated once Azure app is created)*
+- **Deployment:** GitHub Actions workflow (`.github/workflows/azure-static-web-apps-deploy.yml`)
+- **Build Process:** Jekyll builds in GitHub Actions, then deploys to Azure
+- **Free Tier:** 100 GB bandwidth/month, global CDN, automatic SSL
+
+### Deployment Details
+
+The site uses a custom GitHub Actions workflow that:
+1. Sets up Ruby 3.1 environment
+2. Installs Jekyll and dependencies
+3. Builds the site with `JEKYLL_ENV=production`
+4. Deploys the `_site` directory to Azure Static Web Apps
+
+See `AZURE_DEPLOYMENT_SETUP.md` for complete setup instructions.
+
+---
+
+<div style="border: 2px solid red; padding: 5px; margin: 5px 0;">
+<strong>Note:</strong> All that follows is from the project's parent repository. Some information below may be obsolete.
+</div>
+
+---
+
 # Digital-Grinnell/collectionbuilder-csv
 
 This is a `fork` of [CollectionBuilder/collectionbuilder-csv](https://github.com/CollectionBuilder/collectionbuilder-csv) with added GC-specific additions from Mark M., Libby C., and others.  
