@@ -151,7 +151,9 @@ if (defaultSortButton) {
 }
 {% else %}
 /* randomize items once at page load */
-shuffle(items);
+// shuffle(items);
+// Sort by date by default
+sorting(items,"date");
 {% endif %}
 
 /* set some elements */ 
