@@ -3,6 +3,8 @@
 # values set here help configure details of individual pages in the website
 ##########
 
+default-sort-field: date
+
 ##########
 # HOME PAGE
 # The optional visualization on the home page is a composite of the transcripts color-coded representation 
