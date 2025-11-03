@@ -5,6 +5,7 @@
     
 {%- endcomment -%}
 {%- assign fields = site.data.config-metadata | where_exp: 'item', 'item.display_name != nil' -%}
+<!-- _includes/item/child/metadata.html -->
 <div id="item-metadata">
     <dl>
         {% for f in fields %}{% if child[f.field] %}
@@ -18,8 +19,10 @@
             {% elsif f.external_link == "true" %}
             <a href="{{ child[f.field] }}">{{ child[f.field] }}</a>
             {% else %}
-            {{ child[f.field] | replace: '""','"' }}{% endif %}
+            {{ child[f.field] | replace: '""','"' | replace: ';', ' &middot; ' | replace: '  ', ' ' }}
+            {% endif %}
         </dd>
         {% endif %}{% endfor %}
     </dl>
 </div>
+<!-- /_includes/item/child/metadata.html -->
