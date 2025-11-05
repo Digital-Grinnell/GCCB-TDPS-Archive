@@ -85,7 +85,7 @@ function makeCard(obj) {
             }
         });
         {% else %}
-        card += obj[{{ f.field | jsonify }}];
+            card += obj[{{ f.field | jsonify }}].replaceAll(";"," &middot ");
         {% endif %}
         {% unless forloop.last %}card += '<br>';{% endunless %}
     }
