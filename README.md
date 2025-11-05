@@ -21,7 +21,7 @@ To build and test the site locally on your machine:
 
 This site is automatically deployed to Azure Static Web Apps whenever changes are pushed to the `main` branch.
 
-- **Live Site:** [https://delightful-mud-01e2fb510.2.azurestaticapps.net](https://delightful-mud-01e2fb510.2.azurestaticapps.net) *(URL will be updated once Azure app is created)*
+- **Live Site:** [https://mango-river-01124ad1e.3.azurestaticapps.net/browse.html](https://mango-river-01124ad1e.3.azurestaticapps.net/browse.html)
 - **Deployment:** GitHub Actions workflow (`.github/workflows/azure-static-web-apps-deploy.yml`)
 - **Build Process:** Jekyll builds in GitHub Actions, then deploys to Azure
 - **Free Tier:** 100 GB bandwidth/month, global CDN, automatic SSL
