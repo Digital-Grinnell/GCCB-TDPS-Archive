@@ -1,6 +1,6 @@
 field,display_name,btn,hidden,sort_name
 date,Date,,,Date
-playwright/composer,,,true,
+playwright,,,true,
 director,Director,,,Director
 scenic designer,,,true,
 costume designer,,,true,
