@@ -2,7 +2,7 @@ field,index,display
 title,true,true
 date,true,true
 venue,true,true
-playwright/composer,true,true
+playwright,true,true
 director,true,true
 scenic designer,true,true
 lighting designer,true,true
