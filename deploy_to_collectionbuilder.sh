@@ -29,10 +29,10 @@ fi
 
 # Copy the updated CSV file
 echo "Copying CSV file to _data directory..."
-cp "/Users/BestChlo2016/Documents/GitHub/manage-digital-ingest-flet-CollectionBuilder/storage/temp/file_selector_20251113_192737_1c4a3ff2/TDPS_CBMetadata_transformed_20251113_193259.csv" "_data/TDPS_CBMetadata_transformed_20251113_193259.csv"
+cp "/Users/BestChlo2016/Documents/GitHub/manage-digital-ingest-flet-CollectionBuilder/storage/temp/file_selector_20251114_140948_af7de40d/TDPS_CBMetadata_transformed_20251114_140948.csv" "_data/TDPS_CBMetadata_transformed_20251114_140948.csv"
 
 if [ $? -eq 0 ]; then
-    echo "✓ CSV file copied successfully: _data/TDPS_CBMetadata_transformed_20251113_193259.csv"
+    echo "✓ CSV file copied successfully: _data/TDPS_CBMetadata_transformed_20251114_140948.csv"
 else
     echo "✗ Failed to copy CSV file"
     exit 1
@@ -49,15 +49,15 @@ if grep -q "^metadata:" "_config.yml"; then
     echo "  (Backup created: _config.yml.backup)"
     
     # Update the metadata line
-    sed -i.tmp 's/^metadata:.*/metadata: TDPS_CBMetadata_transformed_20251113_193259/' _config.yml
+    sed -i.tmp 's/^metadata:.*/metadata: TDPS_CBMetadata_transformed_20251114_140948/' _config.yml
     rm -f _config.yml.tmp
     
     echo "✓ Updated metadata key in _config.yml"
-    echo "  New value: metadata: TDPS_CBMetadata_transformed_20251113_193259"
+    echo "  New value: metadata: TDPS_CBMetadata_transformed_20251114_140948"
 else
     echo "⚠ Warning: 'metadata:' key not found in _config.yml"
     echo "  Please manually add the following line to _config.yml:"
-    echo "  metadata: TDPS_CBMetadata_transformed_20251113_193259"
+    echo "  metadata: TDPS_CBMetadata_transformed_20251114_140948"
 fi
 
 echo ""
