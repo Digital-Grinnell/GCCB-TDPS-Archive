@@ -5,9 +5,9 @@ permalink: /about.html
 # include CollectionBuilder info at bottom
 credits: true
 # featured-image value can be one objectid for a photo object in this collection, a relative path to an image in this project, or a full url to any image. If left blank, no featured image will appear at top of About page.
-about-featured-image: demo_031
+about-featured-image: fairladies002
 # set background-position for featured image, "center", "top", "bottom"
-position: bottom
+position: center
 # major heading to display over featured image
 heading: About the Collection
 # paragraph text below heading in featured image
@@ -41,7 +41,6 @@ The resulting static site can be hosted on any basic web server.
 [CollectionBuilder](https://github.com/CollectionBuilder/) is an set of open source tools for creating digital collection and exhibit websites that are driven by metadata and powered by modern static web technology.
 See [CB Docs](https://collectionbuilder.github.io/cb-docs/) for detailed information.
 
-{% include feature/image.html objectid="demo_001" width="75" %} 
+<!-- {% include feature/image.html objectid="demo_001" width="75" %}  -->
 
-<!-- IMPORTANT!!! DELETE this comment and the include below when you are finished editing this page for your collection. The include below introduces about page features. They will show up on your collection's about page until you delete it.  -->
-{% include cb/about_the_about.md %} 
+
