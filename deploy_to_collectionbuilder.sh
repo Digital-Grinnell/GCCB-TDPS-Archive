@@ -27,14 +27,25 @@ if [ ! -d "_data" ]; then
     mkdir -p _data
 fi
 
-# Copy the updated CSV file
-echo "Copying CSV file to _data directory..."
-cp "/Users/BestChlo2016/Documents/GitHub/manage-digital-ingest-flet-CollectionBuilder/storage/temp/file_selector_20251208_120817_fa31aa01/TDPS_CBMetadata_transformed_20251208_120817.csv" "_data/TDPS_CBMetadata_transformed_20251208_120817.csv"
+# Copy the updated CSV file with timestamped name (for record-keeping)
+echo "Copying timestamped CSV file to _data directory..."
+cp "/Users/BestChlo2016/Documents/GitHub/manage-digital-ingest-flet-CollectionBuilder/storage/temp/file_selector_20251211_173700_8f35bac9/TDPS_CBMetadata_transformed_20251211_173700.csv" "_data/TDPS_CBMetadata_transformed_20251211_173700.csv"
 
 if [ $? -eq 0 ]; then
-    echo "✓ CSV file copied successfully: _data/TDPS_CBMetadata_transformed_20251208_120817.csv"
+    echo "✓ Timestamped CSV copied: _data/TDPS_CBMetadata_transformed_20251211_173700.csv"
 else
-    echo "✗ Failed to copy CSV file"
+    echo "✗ Failed to copy timestamped CSV file"
+    exit 1
+fi
+
+# Create a copy with the original filename for deployment
+echo "Creating deployment copy with original filename..."
+cp "/Users/BestChlo2016/Documents/GitHub/manage-digital-ingest-flet-CollectionBuilder/storage/temp/file_selector_20251211_173700_8f35bac9/TDPS_CBMetadata_transformed_20251211_173700.csv" "_data/TDPS_CBMetadata_transformed.csv"
+
+if [ $? -eq 0 ]; then
+    echo "✓ Deployment CSV created: _data/TDPS_CBMetadata_transformed.csv"
+else
+    echo "✗ Failed to create deployment CSV"
     exit 1
 fi
 
@@ -49,15 +60,15 @@ if grep -q "^metadata:" "_config.yml"; then
     echo "  (Backup created: _config.yml.backup)"
     
     # Update the metadata line
-    sed -i.tmp 's/^metadata:.*/metadata: TDPS_CBMetadata_transformed_20251208_120817/' _config.yml
+    sed -i.tmp 's/^metadata:.*/metadata: TDPS_CBMetadata_transformed/' _config.yml
     rm -f _config.yml.tmp
     
     echo "✓ Updated metadata key in _config.yml"
-    echo "  New value: metadata: TDPS_CBMetadata_transformed_20251208_120817"
+    echo "  New value: metadata: TDPS_CBMetadata_transformed"
 else
     echo "⚠ Warning: 'metadata:' key not found in _config.yml"
     echo "  Please manually add the following line to _config.yml:"
-    echo "  metadata: TDPS_CBMetadata_transformed_20251208_120817"
+    echo "  metadata: TDPS_CBMetadata_transformed"
 fi
 
 echo ""
