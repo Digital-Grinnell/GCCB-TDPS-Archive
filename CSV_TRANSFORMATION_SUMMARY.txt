@@ -1,0 +1,80 @@
+CSV TRANSFORMATION SUMMARY
+=========================
+
+Source Files:
+- verified_CSV_headings_for_GCCB_projects.csv (33 fields - the verified structure)
+- _data/TDPS_CBMetadata.csv (40 fields - the original TDPS data)
+
+Output File:
+- _data/TDPS_CBMetadata_transformed.csv (49 fields)
+
+Structure:
+----------
+The new CSV follows the verified structure with all 33 verified fields first,
+followed by 16 unique TDPS fields appended at the end.
+
+Field Mappings (TDPS → Verified):
+----------------------------------
+objectid → objectid
+parentid → parentid
+filename → original_file_name
+title → title
+date → date
+description → description
+subject → subject
+location → location
+latitude → latitude
+longitude → longitude
+source → source
+identifier → identifier
+type → type
+format → format
+language → language
+rights → rights
+rightsstatement → rightsstatement
+display_template → display_template
+object_location → object_location
+image_small → image_small
+image_thumb → image_thumb
+image_alt_text → image_alt_text
+object_transcript → object_transcript
+
+Unique TDPS Fields Appended (columns 34-49):
+--------------------------------------------
+34. venue
+35. playwright/composer
+36. director
+37. scenic designer
+38. costume designer
+39. lighting designer
+40. technical director
+41. music director
+42. choreographer
+43. sound designer
+44. projection designer
+45. dramaturg
+46. intimacy director
+47. production students
+48. ensemble
+49. collaborators
+
+Empty Verified Fields:
+---------------------
+The following verified fields have no corresponding data in TDPS:
+- originating_system_id
+- short_filename
+- sort_index
+- admin_notes
+- interviewer
+- interviewee
+- people
+- WORKSPACE1
+- WORKSPACE2
+- WORKSPACE3
+
+Data Statistics:
+---------------
+Total rows transformed: 28 (including header row + 27 data rows)
+- 7 collection-level records (compound objects)
+- 11 empty rows
+- 9 item-level records (images and PDFs)
