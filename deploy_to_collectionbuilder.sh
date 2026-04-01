@@ -29,10 +29,10 @@ fi
 
 # Copy the updated CSV file with timestamped name (for record-keeping)
 echo "Copying timestamped CSV file to _data directory..."
-cp "/Users/BestChlo2016/Downloads/MDI_temp/file_selector_20260217_191357_4a51b36c/TDPS_CBMetadata_transformed_20260217_191515.csv" "_data/TDPS_CBMetadata_transformed_20260217_191515.csv"
+cp "/Users/sanning/Downloads/MDI_temp/file_selector_20260401_162036_fe412e56/TDPS_CBMetadata_transformed_20260401_162036.csv" "_data/TDPS_CBMetadata_transformed_20260401_162036.csv"
 
 if [ $? -eq 0 ]; then
-    echo "✓ Timestamped CSV copied: _data/TDPS_CBMetadata_transformed_20260217_191515.csv"
+    echo "✓ Timestamped CSV copied: _data/TDPS_CBMetadata_transformed_20260401_162036.csv"
 else
     echo "✗ Failed to copy timestamped CSV file"
     exit 1
@@ -40,7 +40,7 @@ fi
 
 # Create a copy with the original filename for deployment
 echo "Creating deployment copy with original filename..."
-cp "/Users/BestChlo2016/Downloads/MDI_temp/file_selector_20260217_191357_4a51b36c/TDPS_CBMetadata_transformed_20260217_191515.csv" "_data/TDPS_CBMetadata_transformed.csv"
+cp "/Users/sanning/Downloads/MDI_temp/file_selector_20260401_162036_fe412e56/TDPS_CBMetadata_transformed_20260401_162036.csv" "_data/TDPS_CBMetadata_transformed.csv"
 
 if [ $? -eq 0 ]; then
     echo "✓ Deployment CSV created: _data/TDPS_CBMetadata_transformed.csv"
