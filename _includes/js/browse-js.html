@@ -64,7 +64,7 @@ function makeCard(obj) {
     }
     
     // Title
-    card += `<div class="card-body text-center"><h3 class="card-title h4"><a href="${itemHref}" class="text-dark">${obj.title}</a></h3>`;
+    card += `<div class="card-body text-center"><h3 class="card-title h4"><a href="${itemHref}" class="text-dark"><i>${obj.title}</i></a></h3>`;
     
     // Icon for items without images
     if(!obj.img) {

@@ -20,7 +20,7 @@ source-code: https://github.com/Digital-Grinnell/collectionbuilder-csv
 # title of site appears in banner
 title: Theatre, Dance, and Performance Studies Production Archive
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: Digital Collection Magic with Static Web Technologies
+tagline: 
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
 description: "A repository of photographs, playbills, posters, and other media relating to productions hosted by the Department of Theatre, Dance, and Performance Studies."
