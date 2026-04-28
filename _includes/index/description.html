@@ -16,6 +16,6 @@
         <{{ include.heading_level | default: 'h2' | strip }} class="card-title h5">Description</{{ include.heading_level | default: 'h2' | strip }}>
         <p class="card-text">{{ site.description }}</p>
         {%- assign about = site.data.config-nav | where: "stub","/about.html" | size -%}{% if about > 0 %}
-        <a class="btn btn-{{ include.btn-color | default: 'primary' }}" href="{{ '/about.html' | relative_url }}" >Learn More &raquo;</a>{% endif %}
+        <a class="btn btn-{{ include.btn-color | default: 'primary' }}" href="https://www.grinnell.edu/academics/majors-concentrations/theatre-dance" >Grinnell College TDPS</a>{% endif %}
     </div>
 </div>
