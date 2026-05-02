@@ -22,7 +22,7 @@ toc: false
 This collection hosts production media from 1970 to the present, representing over 200 main stage productions and 15,000 items. Materials include photographs, posters, playbills, and news articles; publicly available production videos are hosted on Panopto (link forthcoming). Most items from the collection's first thirty-five years were digitized from physical materials such as 35mm photo slides and large-format posters. Items from 2005 onward are predominantly born-digital.
 
 ## Contribute to the Collection
-This archive is a work in progress. TDPS is particularly interested in materials that document the process of making theatre: rehearsals, design work, offstage collaboration, and other behind-the-scenes moments. If you have items you would like to contribute, please contact collection manager Kate Baumgartner.
+This archive is a work in progress. TDPS is particularly interested in materials that document the process of making theatre: rehearsals, design work, offstage collaboration, and other behind-the-scenes moments. If you have items you would like to contribute, please contact collection manager [Kate Baumgartner](https://www.grinnell.edu/user/15861).
 
 
 <!-- {% include feature/image.html objectid="demo_001" width="75" %}  -->
