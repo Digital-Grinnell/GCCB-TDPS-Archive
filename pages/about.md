@@ -18,13 +18,12 @@ padding: 6em
 # Look in _includes/feature for options to easily add features to the page
 toc: false
 ---
-## About Digital Grinnell
-[Digital Grinnell](https://grinnell.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=01GCL_INST:GCL&collectionId=81302943070004641) contributes to “free inquiry and the open exchange of ideas” through the preservation and publication of scholarship created by Grinnell College students, faculty, and staff, as well as selected material that illuminates the College’s history and other activities.
+## History and Scope of the Collection
+This collection hosts production media from 1970 to the present, representing over 200 main stage productions and 15,000 items. Materials include photographs, posters, playbills, and news articles; publicly available production videos are hosted on Panopto (link forthcoming). Most items from the collection's first thirty-five years were digitized from physical materials such as 35mm photo slides and large-format posters. Items from 2005 onward are predominantly born-digital.
 
-## About Grinnell College Libraries
-The 11 faculty librarians and 19 staff of the [Grinnell College Libraries](https://www.grinnell.edu/academics/libraries/about-us) — Burling Library, the Kistle Science Library, and the Curriculum Library — are dedicated to helping Grinnell students, faculty, and staff succeed in learning, teaching, and research. Our services emphasize working closely with students to develop fluency in the use and evaluation of information sources as they conduct research and other intellectual investigations, through individualized research appointments, classroom instruction, and drop-in research assistance. Each academic department and concentration has a professional librarian assigned as its liaison, and we work closely with our campus colleagues to integrate writing, reading, data analysis, academic advising, and other services. The Libraries’ book, journal, data, and media collections — in analog and digital formats — are wide-ranging and intellectually challenging, representing multiple viewpoints, languages, and cultures, and we are part of a worldwide network of libraries that can bring you information from all parts of the globe. We offer a variety of spaces for quiet and collaborative study, practicing presentations, and relaxing, and we sponsor readings, lectures, and musical performances throughout the year. We’re also part of the Grinnell town community; residents are welcome to borrow from our collection, use our facilities, and enjoy our events.
+## Contribute to the Collection
+This archive is a work in progress. TDPS is particularly interested in materials that document the process of making theatre: rehearsals, design work, offstage collaboration, and other behind-the-scenes moments. If you have items you would like to contribute, please contact collection manager Kate Baumgartner.
 
-As the world of information grows more complex — available in more formats, from more sources, with confusing questions about copyright and reliability — libraries are more central to learning than ever before. We look forward to working with you!
 
 <!-- {% include feature/image.html objectid="demo_001" width="75" %}  -->
 
