@@ -18,7 +18,7 @@ source-code: https://github.com/Digital-Grinnell/collectionbuilder-csv
 # SITE SETTINGS
 #
 # title of site appears in banner
-title: Theatre, Dance, and Performance Studies Production Archive
+title: Production Archive
 # tagline, a short phrase that will appear throughout the site in the top banner
 tagline: 
 # description appears in meta tags and other locations
@@ -50,7 +50,7 @@ metadata: TDPS_CBMetadata_transformed
 #
 organization-name: "Grinnell College Department of Theatre, Dance, and Performance Studies"
 organization-link: https://www.grinnell.edu/academics/majors-concentrations/theatre-dance
-organization-logo-banner: assets/img/Primary_Libraries.png
+organization-logo-banner: assets/img/TDPS-color.png
 #There is also an all black logo saved as assets/img/black_logo.png
 organization-logo-nav: assets/img/nav-logo.png
 #There is also an all black logo
