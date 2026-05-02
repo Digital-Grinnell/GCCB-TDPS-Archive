@@ -48,8 +48,8 @@ metadata: TDPS_CBMetadata_transformed
 ##########
 # ORGANIZATION SETTINGS
 #
-organization-name: "Grinnell College Libraries"
-organization-link: https://www.grinnell.edu/academics/libraries
+organization-name: "Grinnell College Department of Theatre, Dance, and Performance Studies"
+organization-link: https://www.grinnell.edu/academics/majors-concentrations/theatre-dance
 organization-logo-banner: assets/img/Primary_Libraries.png
 #There is also an all black logo saved as assets/img/black_logo.png
 organization-logo-nav: assets/img/nav-logo.png
