@@ -24,3 +24,9 @@ CSV_TRANSFORMATION_SUMMARY.txt
 # if you would like to commit your objects to github, delete the line below!
 objects/
 !objects/markdown/
+
+# Account for DART files that should not be in the remote!
+logfiles/*
+csvdiff_*
+DART_*
+dart_settings.json
