@@ -30,3 +30,4 @@ logfiles/*
 csvdiff_*
 DART_*
 dart_settings.json
+*.html
