@@ -147,9 +147,14 @@ bundle exec jekyll serve
 - **Global CDN** distribution
 
 ## Current Site Configuration
-- **Metadata:** `TDPS_CBMetadata_transformed.csv`
+- **Metadata:** `TDPS_DART_Core.csv`
 - **Collection:** Theatre, Dance, and Performance Studies Archive
 - **Build Tool:** Jekyll (CollectionBuilder-CSV)
+
+## TZ
+
+On June 9 a `TZ: America/Chicago` environment variable was added to the Azure Portal so that future builds display a proper build timestamp.   
+
 
 ---
 
