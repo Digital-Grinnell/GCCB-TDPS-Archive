@@ -8,7 +8,7 @@
     <div class="card-body">
         <dl>
             <dt>Citation:</dt>
-            <dd>"{{ child.title | default: page.title }}", {{ site.title }}, {% if site.organization-name %}{{ site.organization-name }}, {% endif %}<a href="{{ page.url | absolute_url }}#{{ child.objectid }}">{{ page.url | absolute_url }}#{{ child.objectid }}</a></dd>
+            <dd>"{{ child.dc_title | default: page.dc_title }}", {{ site.title }}, {% if site.organization-name %}{{ site.organization-name }}, {% endif %}<a href="{{ page.url | absolute_url }}#{{ child.objectid }}">{{ page.url | absolute_url }}#{{ child.objectid }}</a></dd>
         </dl>
     </div>
 </div>
