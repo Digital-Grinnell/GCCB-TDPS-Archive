@@ -55,6 +55,7 @@ organization-logo-banner: assets/img/TDPS-color.png
 #There is also an all black logo saved as assets/img/black_logo.png
 organization-logo-nav: assets/img/nav-logo.png
 #There is also an all black logo
+timezone: America/Chicago
 
 ##########
 # ROBOTS EXCLUDE
