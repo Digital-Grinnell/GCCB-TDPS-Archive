@@ -1,6 +1,6 @@
 field,display_name
-description,Description
-date,Date
+dc_description,Description
+dc_date,Date
 location,Location
 interviewee,Interviewer
 interviewee,Interviewer

@@ -1,0 +1,22 @@
+field,index,display
+dc_title,true,true
+dc_date,true,true
+venue,true,true
+playwright,true,true
+director,true,true
+scenic designer,true,true
+lighting designer,true,true
+costume designer,true,true
+technical director,true,true
+music director,true,true
+choreographer,true,true
+sound designer,true,true
+projection designer,true,true
+dramaturg,true,true
+intimacy director,true,true
+production students,true,true
+ensemble,true,true
+collaborators,true,true
+dc_description,true,true
+dc_subject,true,true
+location,true,false

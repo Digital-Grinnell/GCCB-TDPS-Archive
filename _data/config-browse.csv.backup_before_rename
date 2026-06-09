@@ -1,0 +1,19 @@
+field,display_name,btn,hidden,sort_name
+dc_date,Date,,,Date
+playwright,,,true,
+director,Director,,,Director
+scenic designer,,,true,
+costume designer,,,true,
+lighting designer,,,true,
+technical director,,,true,
+music director,,,true,
+choreographer,,,true,
+sound designer,,,true,
+projection designer,,,true,
+dramaturg,,,true,
+intimacy director,,,true,
+production students,,,true,
+ensemble,,,true,
+collaborators,,,true,
+dc_subject,,true,,
+location,,true,,

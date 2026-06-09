@@ -67,10 +67,10 @@ custom-foot: js/unique-browse-js.html
                     {% if item.focused_event %}
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="{{ item.image }}" class="card-img-top" alt="{{ item.title }}">
+                            <img src="{{ item.image }}" class="card-img-top" alt="{{ item.dc_title }}">
                             <div class="card-body">
-                                <h5 class="card-title">{{ item.title }}</h5>
-                                <p class="card-text">{{ item.description }}</p>
+                                <h5 class="card-title">{{ item.dc_title }}</h5>
+                                <p class="card-text">{{ item.dc_description }}</p>
                             </div>
                         </div>
                     </div>
