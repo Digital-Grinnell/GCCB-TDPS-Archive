@@ -25,7 +25,8 @@ CSV_TRANSFORMATION_SUMMARY.txt
 objects/
 !objects/markdown/
 
-# Account for DART files that should not be in the remote!
+# Account for DART files and large that should not be in the remote!
+.DART-working-directory/
 logfiles/*
 csvdiff_*
 DART_*
