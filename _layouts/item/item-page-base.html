@@ -1,10 +1,9 @@
 ---
-# base layout for other item display_template layouts
-# adds breadcrumbs and title at top; citation box, rights box, and browse buttons at bottom
-layout: default
-# item-meta adds rich meta markup to the page on production build
 item-meta: true
+layout: default
 ---
+
+<!-- jekyll: GCCB-TDPS-Archive/_layouts/item/item-page-base.html -->
 <div class="container py-3">
 
     {% include item/breadcrumbs.html %}
@@ -44,3 +43,4 @@ item-meta: true
         {% include item/browse-buttons.html %}
     {%- endif -%}
 </div>
+<!-- /jekyll: GCCB-TDPS-Archive/_layouts/item/item-page-base.html -->

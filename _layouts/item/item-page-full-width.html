@@ -1,10 +1,9 @@
 ---
-# base layout for full page item display_template layouts
-# adds breadcrumbs and title at top; citation box, rights box, and browse buttons at bottom
-layout: default
-# item-meta adds rich meta markup in HTML <head> element to the page on production build for better SEO
 item-meta: true
+layout: default
 ---
+
+<!-- jekyll: GCCB-TDPS-Archive/_layouts/item/item-page-full-width.html -->
 {% if page.display_template == "compound_object" %}{% assign children = site.data[site.metadata] | where_exp: 'item','item.parentid == page.objectid' %}{% endif %}
 <div class="container-fluid py-3">
 
@@ -35,3 +34,4 @@ item-meta: true
         {% include item/browse-buttons.html %}
     {%- endif -%}
 </div>
+<!-- /jekyll: GCCB-TDPS-Archive/_layouts/item/item-page-full-width.html -->
