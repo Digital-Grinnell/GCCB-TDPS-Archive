@@ -1,5 +1,5 @@
 field,display_name,btn,hidden,sort_name
-dc_date,Date,,,Date
+date,Date,,,Date
 playwright,,,true,
 director,Director,,,Director
 scenic designer,,,true,
@@ -15,5 +15,5 @@ intimacy director,,,true,
 production students,,,true,
 ensemble,,,true,
 collaborators,,,true,
-dc_subject,,true,,
+subject,,true,,
 location,,true,,

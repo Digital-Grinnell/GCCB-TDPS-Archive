@@ -1,6 +1,6 @@
 field,index,display
-dc_title,true,true
-dc_date,true,true
+title,true,true
+date,true,true
 venue,true,true
 playwright,true,true
 director,true,true
@@ -17,6 +17,6 @@ intimacy director,true,true
 production students,true,true
 ensemble,true,true
 collaborators,true,true
-dc_description,true,true
-dc_subject,true,true
+description,true,true
+subject,true,true
 location,true,false

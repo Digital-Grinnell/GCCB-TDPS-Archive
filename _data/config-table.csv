@@ -1,5 +1,5 @@
 field,display_name
-dc_title,Title
-dc_date,Date
-dc_description,Description
-dc_subject,Subjects
+title,Title
+date,Date
+description,Description
+subject,Subjects

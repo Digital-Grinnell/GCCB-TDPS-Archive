@@ -62,6 +62,6 @@
     {% if include.objectid %}
     /* add marker */ 
     L.marker(mapCenter).addTo(map)
-    .bindPopup('{{ map-item.dc_title | escape }}');{% endif %}
+    .bindPopup('{{ map-item.title | escape }}');{% endif %}
 
 </script>

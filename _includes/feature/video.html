@@ -31,7 +31,7 @@
     {% capture raw_src %}{{ include.objectid }}{% endcapture %}
 {%- else -%}
     {%- assign item = site.data[site.metadata] | where: "objectid", include.objectid | first -%}
-    {% capture video_caption %}{% if include.caption %}{{ include.caption }}{% else %}<a href="{{ '/items/' | relative_url }}{% if item.parentid %}{{ item.parentid }}.html#{{ item.objectid }}{% else %}{{ item.objectid }}.html{% endif %}">{{ item.dc_title }}</a>{% endif %}{% endcapture %}
+    {% capture video_caption %}{% if include.caption %}{{ include.caption }}{% else %}<a href="{{ '/items/' | relative_url }}{% if item.parentid %}{{ item.parentid }}.html#{{ item.objectid }}{% else %}{{ item.objectid }}.html{% endif %}">{{ item.title }}</a>{% endif %}{% endcapture %}
     {% capture video_poster %}{{ include.cover | default: item.image_small | default: '' }}{% endcapture %}
     {% capture video_transcript %}{{ include.transcript | default: item.object_transcript }}{% endcapture %}
     {% capture raw_src %}{{ item.object_location }}{% endcapture %}

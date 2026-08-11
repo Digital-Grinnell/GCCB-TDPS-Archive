@@ -29,13 +29,13 @@ var items = [
         {% if item.display_template %}"display_template": {{ item.display_template | jsonify }}, {%- endif -%}
         {% if item.format %}"format": {{ item.format | jsonify }}, {%- endif -%}
         {% if item.image_alt_text %}"alt": {{ item.image_alt_text | escape | jsonify }}, {%- endif -%}
-        "dc_title":{{ item.dc_title | strip | escape | jsonify }},
+        "title":{{ item.title | strip | escape | jsonify }},
         {% if item.parentid %}"parent": {{ item.parentid | jsonify }}, {%- endif -%}
         "id":{{ item.objectid | jsonify }} }{% unless forloop.last %},{% endunless %}{%- endfor -%}
 ];
 
 // Valid field names for URL-based searches
-const validFields = [{% for f in fields %}"{{ f.field }}",{% endfor %}"dc_title","display_template"];
+const validFields = [{% for f in fields %}"{{ f.field }}",{% endfor %}"title","display_template"];
 
 // Date field names - add your date fields here
 const dateFields = ['date', 'created', 'published', 'modified', 'issued', 'date_created', 'date_published'];
@@ -60,11 +60,11 @@ function makeCard(obj) {
     
     // Image or icon
     if(obj.img) {
-        card += `<a href="${itemHref}"><img class="card-img-top lazyload" src="${placeholder}" data-src="${obj.img}" alt="${obj.alt || obj.dc_title}"></a>`;
+        card += `<a href="${itemHref}"><img class="card-img-top lazyload" src="${placeholder}" data-src="${obj.img}" alt="${obj.alt || obj.title}"></a>`;
     }
     
     // Title
-    card += `<div class="card-body text-center"><h3 class="card-title h4"><a href="${itemHref}" class="text-dark"><i>${obj.dc_title}</i></a></h3>`;
+    card += `<div class="card-body text-center"><h3 class="card-title h4"><a href="${itemHref}" class="text-dark"><i>${obj.title}</i></a></h3>`;
     
     // Icon for items without images
     if(!obj.img) {
@@ -98,7 +98,7 @@ function makeCard(obj) {
         card += `<p class="card-text"><small><a class="btn btn-sm btn-outline-secondary" href="{{ page.url | relative_url }}#display_template:${encodeURIComponent(obj.display_template)}">${obj.display_template.toUpperCase().replace("_"," ")} ${mediaIcon}</a></small></p>`;
     }
     
-    card += `<hr><a href="${itemHref}" class="btn btn-sm btn-light" title="link to ${obj.dc_title}">View Full Record</a></div></div></div>`;
+    card += `<hr><a href="${itemHref}" class="btn btn-sm btn-light" title="link to ${obj.title}">View Full Record</a></div></div></div>`;
     return card;
 }
 
@@ -811,7 +811,8 @@ function sorting(jsonObject, keyToSortBy) {
         if (typeof x === 'string') x = x.toUpperCase();
         if (typeof y === 'string') y = y.toUpperCase();
         if (keyToSortBy === "date") {
-            return ((x==null) ? -1 : (y==null) ? 1: (x < y) ? 1 : ((x > y) ? -1 : 0));
+            // Keep latest dates first, but push empty dates to the end.
+            return ((x==null) ? 1 : (y==null) ? -1: (x < y) ? 1 : ((x > y) ? -1 : 0));
         }
         return ((x==null) ? 1: (y==null) ? -1: (x < y) ? -1 : ((x > y) ? 1 : 0));
     });

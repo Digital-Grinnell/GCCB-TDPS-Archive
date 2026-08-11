@@ -1,11 +1,11 @@
 ---
 # generate full transcript data as json
 ---
-{%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid and item.dc_ and item.display_template == "transcript"' -%}
+{%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid and item.title and item.display_template == "transcript"' -%}
 {
     "metadata": {
         "id": "{{ site.baseurl | slugify }}",
-        "dc_title": {{ site.title | jsonify }},
+        "title": {{ site.title | jsonify }},
         "url": "{{ '/' | absolute_url }}",
         "image": "{{ site.data.featured_item.src | absolute_url }}", 
         "description": {{ site.description | jsonify }},
@@ -23,7 +23,7 @@
         {% assign transcript_id = item.objectid %}
         {% assign transcript = site.data.transcripts[transcript_id] %}
         "{{ item.objectid }}": {
-            "dc_title": {{ item.dc_title | jsonify }},
+            "title": {{ item.title | jsonify }},
             "interviewee": {{ item.interviewee | jsonify }},
             "interviewer": {{ item.interviewer | jsonify }},
             "date": {{ item.date | jsonify }},

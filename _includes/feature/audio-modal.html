@@ -34,7 +34,7 @@
     {%- capture audio_link -%}{{ '/items/' | relative_url }}{% if item.parentid %}{{ item.parentid }}.html#{{ item.objectid }}{% else %}{{ item.objectid }}.html{% endif %}{%- endcapture -%}
     {%- capture src -%}{{ item.object_location | relative_url }}{% endcapture %}
     {%- capture audio_caption -%}{% if include.caption %}{{ include.caption }}{% else %}{{ item.description }}{% endif %}{%- endcapture -%}
-    {%- capture audio_title -%}{% if include.title %}{{ include.title }}{% else %}{{ item.dc_title }}{% endif %}{%- endcapture -%}
+    {%- capture audio_title -%}{% if include.title %}{{ include.title }}{% else %}{{ item.title }}{% endif %}{%- endcapture -%}
     {% capture audio_transcript %}{{ include.transcript | default: item.object_transcript }}{% endcapture %}
     {% capture audio_poster %}{% if include.image == false %}{% else %}{{ include.image | default: item.image_small | relative_url | default: '' }}{% endif %}{% endcapture %}
 {% endif %}

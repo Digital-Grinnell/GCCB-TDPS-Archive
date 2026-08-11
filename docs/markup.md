@@ -4,7 +4,7 @@ Pages in CollectionBuilder contain machine readable rich markup following severa
 
 ## Dublin Core 
 
-Dublin Core elements are added to Item pages driven by the "dc_map" column of config-metadata.csv.
+Dublin Core elements are added to Item pages driven by the "map" column of config-metadata.csv.
 
 Choose mapping options directly from the DCMI Terms namespace: http://purl.org/dc/terms/
 *Note: DMCI the original 15 Elements namespace is mirrored in the Terms namespace (i.e. both have "title", "creator", etc), however, using the newer Terms namespace is preferred.*
@@ -13,7 +13,7 @@ The values will be directly added to meta tag name attribute, thus should use th
 
 For example, to use Dublin Core [Title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/title) from the "Terms" namespace, the value would be `DCTERMS.title`.
 To use [abstract](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/abstract), `DCTERMS.abstract`.
-If the "dc_map" column is empty, no DC meta tags will be added.
+If the "map" column is empty, no DC meta tags will be added.
 
 Recommended fields to map include:
 

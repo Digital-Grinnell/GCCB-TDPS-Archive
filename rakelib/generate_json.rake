@@ -130,8 +130,8 @@ task :generate_json do
 
     # Build JSON structure for the individual transcript
     json_data = {
-      'title' => metadata[:dc_title] || transcript_name,
-      'interviewee' => metadata[:interviewee] || metadata[:dc_title] || transcript_name,
+      'title' => metadata[:title] || transcript_name,
+      'interviewee' => metadata[:interviewee] || metadata[:title] || transcript_name,
       'interviewer' => metadata[:interviewer],
       'date' => metadata[:date],
       'subjects' => metadata[:subject]&.to_s&.split(';')&.map(&:strip)&.reject(&:empty?), # Ensure string before split

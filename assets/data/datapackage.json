@@ -7,13 +7,13 @@
 {
     "profile": "data-package",
     "name": "{{ site.title | slugify }}-data",
-    "dc_title": "{{ site.title | escape }} Data",
+    "title": "{{ site.title | escape }} Data",
     "description": "Metadata and data derived from {{ site.title | escape }}. {{ site.description | escape }}",
     {% if site.keywords %}"keywords": {% assign keywords = site.keywords | split: ';' %} {{ keywords | jsonify }},{% endif %}
     "homepage": "{{ '/' | absolute_url }}",
     "contributors": [
         {
-            "dc_title": "{{ site.organization-name | escape }}",
+            "title": "{{ site.organization-name | escape }}",
             "path": "{{ site.organization-link }}",
             "role": "author"
         }
@@ -22,7 +22,7 @@
     "licenses": [
         {
             "name": "CC0-1.0",
-            "dc_title": "CC0 1.0",
+            "title": "CC0 1.0",
             "path": "https://creativecommons.org/publicdomain/zero/1.0/"
         }
     ],
@@ -31,7 +31,7 @@
         {
             "name": "facets-json",
             "path": "facets.json",
-            "dc_title": "{{ site.title | escape }} Metadata Facets",
+            "title": "{{ site.title | escape }} Metadata Facets",
             "description":"Unique values and counts of metadata facet fields.",
             "format":"json",
             "profile": "data-resource"
@@ -40,7 +40,7 @@
         {
             "name": "subject-csv",
             "path": "subjects.csv",
-            "dc_title": "{{ site.title | escape }} metadata subject counts in csv",
+            "title": "{{ site.title | escape }} metadata subject counts in csv",
             "description": "Unique values and counts of metadata subject fields.",
             "format":"csv",
             "profile":"tabular-data-resource",
@@ -67,7 +67,7 @@
         {
             "name": "subjects-json",
             "path": "subjects.json",
-            "dc_title": "{{ site.title | escape }}  metadata subject counts in json",
+            "title": "{{ site.title | escape }}  metadata subject counts in json",
             "description":"Unique values and counts of metadata subject fields.",
             "format":"json",
             "profile": "data-resource"
@@ -76,7 +76,7 @@
         {
             "name": "locations-csv",
             "path": "subjects.csv",
-            "dc_title": "{{ site.title | escape }} metadata location counts in csv",
+            "title": "{{ site.title | escape }} metadata location counts in csv",
             "description": "Unique values and counts of metadata location fields.",
             "format":"csv",
             "profile":"tabular-data-resource",
@@ -103,7 +103,7 @@
         {
             "name": "locations-json",
             "path": "locations.json",
-            "dc_title": "{{ site.title | escape }} metadata location counts in json",
+            "title": "{{ site.title | escape }} metadata location counts in json",
             "description":"Unique values and counts of metadata location fields.",
             "format":"json",
             "profile": "data-resource"
@@ -112,7 +112,7 @@
         {
             "name": "geodata-json",
             "path": "geodata.json",
-            "dc_title": "{{ site.title | escape }} geographic metadata",
+            "title": "{{ site.title | escape }} geographic metadata",
             "description": "Geojson data containing all objects with lat-longs and associated descriptive metadata.",
             "format":"json",
             "profile": "data-resource"
@@ -121,7 +121,7 @@
         {
             "name": "timeline-json",
             "path": "timelinejs.json",
-            "dc_title": "{{ site.title | escape }} timeline metadata",
+            "title": "{{ site.title | escape }} timeline metadata",
             "description": "Time-based metadata formatted for TimelineJS or other applications.",
             "format":"json",
             "profile": "data-resource"
@@ -129,7 +129,7 @@
         {
             "name": "metadata-csv",
             "path": "metadata.csv",
-            "dc_title": "{{ site.title | escape }} full metadata in csv",
+            "title": "{{ site.title | escape }} full metadata in csv",
             "description": "Complete metadata export for {{ site.title | escape }} objects.",
             "format":"csv",
             "profile":"data-resource"
@@ -137,7 +137,7 @@
         {
             "name": "metadata-json",
             "path": "metadata.json",
-            "dc_title": "{{ site.title | escape }} full metadata in json",
+            "title": "{{ site.title | escape }} full metadata in json",
             "description": "Complete metadata export for {{ site.title | escape }} objects.",
             "format":"json",
             "profile":"data-resource"

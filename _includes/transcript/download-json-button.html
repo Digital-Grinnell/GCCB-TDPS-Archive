@@ -19,7 +19,7 @@ Create this file as _includes/transcript/download-json-button.html
     {% for transcript in site.data.transcripts %}
     {% assign transcript-name = transcript[0] %}
     {% assign transcript_item = site.data[site.metadata] | where_exp: 'item', 'item.objectid == transcript-name' | first %}
-    <li><a class="dropdown-item" href="{{ "/assets/data/transcripts/" | append: transcript-name | append: ".json" | relative_url }}" download>{{ transcript_item.dc_title | default: transcript-name }}</a></li>
+    <li><a class="dropdown-item" href="{{ "/assets/data/transcripts/" | append: transcript-name | append: ".json" | relative_url }}" download>{{ transcript_item.title | default: transcript-name }}</a></li>
     {% endfor %}
   </ul>
 </div>{% else %}

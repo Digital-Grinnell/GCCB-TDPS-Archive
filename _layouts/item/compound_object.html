@@ -8,8 +8,8 @@ layout: item/item-page-base
 {% assign children = site.data[site.metadata] | where_exp: 'item','item.parentid == page.objectid' %}
 
 <div class="mb-4 ">
-    <p style="font-size:3em; font-weight:bold">{{ page.dc_title }}</p>   
-    <p>Date: {{ page.dc_date }}</p>    
+    <p style="font-size:3em; font-weight:bold">{{ page.title }}</p>   
+    <p>Date: {{ page.date }}</p>    
 
     {% include item/child/compound-item-modal-gallery.html %}
 

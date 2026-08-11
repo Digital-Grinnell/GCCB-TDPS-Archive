@@ -11,8 +11,8 @@ permalink: /oai.xml
 ---
 {%- if jekyll.environment == "production" -%}
 {%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid' -%}
-{%- assign fields = site.data.config-metadata | where_exp: 'field','field.dc_map' -%}
-{%- assign oai_dc_fields = "creator;subject;description;publisher;contributor;type;format;identifier;source;language;relation;coverage;rights" | split: ";" -%}
+{%- assign fields = site.data.config-metadata | where_exp: 'field','field.map' -%}
+{%- assign oai_fields = "creator;subject;description;publisher;contributor;type;format;identifier;source;language;relation;coverage;rights" | split: ";" -%}
 <?xml version="1.0" encoding="UTF-8"?>
 <Repository xmlns="http://www.openarchives.org/OAI/2.0/static-repository" 
             xmlns:oai="http://www.openarchives.org/OAI/2.0/" 
@@ -51,7 +51,7 @@ permalink: /oai.xml
                                     http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
                     <dc:title>{{ item.title | xml_escape }}</dc:title>
                     {% for f in fields %}
-                    {%- assign map = f.dc_map | split: "." | last -%}{%- if oai_dc_fields contains map -%}
+                    {%- assign map = f.map | split: "." | last -%}{%- if oai_fields contains map -%}
                     <dc:{{ map }}>{{ item[f.field] | xml_escape }}</dc:{{ map }}>
                     {% elsif map == "created" or map == "date" %}<dc:date>{{ item[f.field] }}</dc:date>
                     {%- endif -%}
